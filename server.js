@@ -4,7 +4,7 @@ var app = express();
 var port = process.env.PORT || 8080;
 
 // Use enforce.HTTPS({ trustProtoHeader: true }) in case you are behind
-// a load balancer (e.g. Heroku). See further comments below
+// a load balancer (e.g. Heroku).
 app.use(enforce.HTTPS({ trustProtoHeader: true }))
 
 /* serves main page */
